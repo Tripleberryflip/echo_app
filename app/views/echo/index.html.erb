@@ -8,30 +8,29 @@
 <div id="columns">
 
 	<div class="first column">
-	<div id="table_column">
-		<table class="table table-bordered" cellpadding = 10px>
-			<tr>
-				<td>hello</td>
-				<td>world</td>
-			</tr>
-			<tr>
-				<td>goodbye</td>
-				<td>world</td>
-			</tr>
-		</table>
+		<div id="table_column">
+			<table class="table table-bordered" cellpadding = 10px>
+				<tr>
+					<td>hello</td>
+					<td>world</td>
+				</tr>
+				<tr>
+					<td>goodbye</td>
+					<td>world</td>
+				</tr>
+			</table>
+		</div>
 	</div>
-	</div>
-
 	<div class="second column">
 		<form action="echo/echo" method="post">
 			<fieldset>
 				<legend>Enter Name</legend>
 				<label>Name:</label>
-				<i class="icon-star"></i><input id="user_name" name="user[name]" size="30" type="text" placeholder="Type something...">
+				<i class="icon-star"></i><input id="name" name="name" size="30" type="text" placeholder="Type something...">
 				<label class="checkbox">
-					<input type="checkbox"> Check me out
+					<input type="checkbox" name="nameCheckBox" value="Check"> Check me out
 				</label>
-				<button type="submit" class="btn btn-inverse">Submit Name</button>
+				<input type="submit" class="btn btn-inverse" name="submit" value="Submit Name"/>
 			</fieldset>
 		</form>
 	</div>
@@ -41,11 +40,11 @@
 			<fieldset>
 				<legend>Enter Age</legend>
 				<label>Age:</label>
-				<i class="icon-calendar"></i><input id="user_age" name="user[age]" size="3" type="text" placeholder="Type something...">
+				<i class="icon-calendar"></i><input id="age" name="age" size="10" type="text" placeholder="Type something...">
 				<label class="checkbox">
-					<input type="checkbox"> Check me out
+					<input type="checkbox" name="ageCheckBox" value="Check"> Check me out
 				</label>
-				<button type="submit" class="btn">Submit Age</button>
+				<input type="submit" class="btn" name="submit" value="Submit Age"/>
 			</fieldset>
 		</form>
 	</div>

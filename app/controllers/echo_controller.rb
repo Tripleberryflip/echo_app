@@ -10,10 +10,21 @@ class EchoController < ApplicationController
 		puts "========================"
 		puts "....Formulating page...."
 		puts "========================"
-		@name = params[:user][:name]
-		@age = params[:user][:age]
+		puts params.inspect
 
-		render 'echo'
-		puts "Hello, "+params[:user][:name]
+		@name = params[:name]
+		@age = params[:age]
+		@namePresent = params[:nameCheckBox]
+		@agePresent = params[:ageCheckBox]
+		if @namePresent.nil?
+			@namePresent = "not present"
+		else
+			@namePresent = "present"
+		end
+		if @agePresent.nil?
+			@agePresent = "not present"
+		else
+			@agePresent = "present"
+		end
 	end
 end

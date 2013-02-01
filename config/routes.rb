@@ -1,7 +1,7 @@
 EchoApp::Application.routes.draw do
 
   post 'echo/echo'
-  get 'echo/index'
+  get 'echo/echo'
 
   root to: 'echo#index'
   # The priority is based upon order of creation:
