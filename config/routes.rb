@@ -3,6 +3,8 @@ EchoApp::Application.routes.draw do
   post 'echo/echo'
   get 'echo/echo'
 
+  get '/public/news.html'
+
   root to: 'echo#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
