@@ -1,5 +1,9 @@
 EchoApp::Application.routes.draw do
 
+  resources :requirements
+
+  get "news/display"
+
   post 'echo/echo'
   get 'echo/echo'
 
