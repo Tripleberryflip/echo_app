@@ -156,10 +156,10 @@ class SkidRowController < ApplicationController
       "home."" <br>For more information on the documentary, visit <a href="http://www.campuscircle.com/review.cfm?r=16696" target="_blank"><u>this review</u></a> for an in-depth look.</p>]
       
       @history_sources = %Q[<p>
-        <a href="http://skidrow.org/wwa_on2.php" target="_blank">
+        > <a href="http://skidrow.org/wwa_on2.php" target="_blank">
         Skid Row Housing Trust - Homes. Support. Success." Skid Row Housing Trust - Homes. Support. Success. N.p., n.d. Web. 1 Apr. 2013.</a>
         <br>
-        <a href="http://www.skidrowjournal.org/history-of-skid-row.htmls" target-"_blank">
+        > <a href="http://www.skidrowjournal.org/history-of-skid-row.htmls" target-"_blank">
         Spivack, Donald. "History of Skid Row -  Skid Row Journal."  Skid Row Journal. Community Redevelopment Agency (CRA), 15 Sept. 1998. Web. 30 March. 2013.</a>
       </p>]
   end
