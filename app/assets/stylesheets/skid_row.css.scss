@@ -1,0 +1,25 @@
+ #sidebar {
+ 	background-color: hsl(210, 2%, 80%);
+ 	-moz-border-radius: 15px;
+ 	border-radius: 15px;
+ 	padding: 10px;
+ 	color: #0088cc;
+ 	font-size: 100%;
+ 	a {}
+	a:link {color:#0088cc;}      /* unvisited link */
+	a:visited {color:#FFF;}  /* visited link */
+	a:hover {color:#FFF;}  /* mouse over link */
+	a:active {color:#FFF;}  /* selected link */
+}
+
+#documentary a {
+	color: #0088cc;
+	&:visited {
+    	color:#FFF;
+    }
+	&:hover {
+		color:#FFF;
+	}
+}
+
+

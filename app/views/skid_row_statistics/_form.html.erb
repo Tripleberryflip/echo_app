@@ -1,0 +1,21 @@
+<%= form_for(@skid_row_statistic) do |f| %>
+  <% if @skid_row_statistic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skid_row_statistic.errors.count, "error") %> prohibited this skid_row_statistic from being saved:</h2>
+
+      <ul>
+      <% @skid_row_statistic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :stat %><br />
+    <%= f.text_field :stat %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

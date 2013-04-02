@@ -1,13 +1,19 @@
 EchoApp::Application.routes.draw do
 
+  resources :skid_row_statistics
+
   resources :requirements
 
   get "news/display"
 
+  get "skid_row/documentary"
+  get "skid_row/about"
+  get "skid_row/relevance"
+
   post 'echo/echo'
   get 'echo/echo'
 
-  root to: 'echo#index'
+  root to: 'skid_row#about'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

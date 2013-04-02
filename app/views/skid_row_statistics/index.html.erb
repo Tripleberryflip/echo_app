@@ -1,0 +1,23 @@
+<h1>Listing skid_row_statistics</h1>
+
+<table>
+  <tr>
+    <th>Stat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @skid_row_statistics.each do |skid_row_statistic| %>
+  <tr>
+    <td><%= skid_row_statistic.stat %></td>
+    <td><%= link_to 'Show', skid_row_statistic %></td>
+    <td><%= link_to 'Edit', edit_skid_row_statistic_path(skid_row_statistic) %></td>
+    <td><%= link_to 'Destroy', skid_row_statistic, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Skid row statistic', new_skid_row_statistic_path %>

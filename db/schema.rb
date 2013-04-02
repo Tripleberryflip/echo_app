@@ -11,13 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211213821) do
+ActiveRecord::Schema.define(:version => 20130318052832) do
 
   create_table "requirements", :force => true do |t|
     t.string   "description"
     t.integer  "points"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "skid_row_statistics", :force => true do |t|
+    t.string   "stat"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
