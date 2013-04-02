@@ -88,6 +88,35 @@ class SkidRowController < ApplicationController
       
       <br><br><center>Hear more about Orlando as he tells part of his story in this interview with AARP:<br>
       <iframe width="640" height="360" src="http://www.youtube.com/embed/sMmlP-gxJbk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></center></p>]
+
+      @documentary_sources = %Q[<p class="text-info">
+      > <a href="http://articles.latimes.com/2007/aug/24/entertainment/et-skidrow24" target="_blank">
+      "Fugees' Pras Goes from Suites to Street." Los Angeles Times. Los Angeles Times, 24 Aug. 2007. Web. 20 Mar. 2013.</a>
+      <br>
+      > <a href="http://www.huffingtonpost.com/katie-halper/the-fugees-pras-on-skid-r_b_96812.html" target="_blank">
+      Halper, Katie. "The Fugees' Pras On Skid Row (Literally)." The Huffington Post. TheHuffingtonPost.com, 15 Apr. 2008. Web. 01 Apr. 2013.</a>
+      
+      <br>> <a href="http://articles.orlandosentinel.com/2008-05-16/entertainment/pras16_1_pras-michel-skid-row-homeless" target="_blank">
+      Honey, I'm Homeless." Orlando Sentinel. N.p., n.d. Web. 1 Apr. 2013.</a>
+      
+      <br>> <a href="http://notyourrawmama.wordpress.com/2011/12/14/orlando-ward-volunteers-of-america/" target="_blank">
+      Notyourrawmama." Notyourrawmama. N.p., n.d. Web. 31 Mar. 2013.</a>
+      
+      <br>> <a href="http://aalbc.com/reviews/skid_row.htm" target="_blank">
+      Skid Row (2007) - Film Review." Skid Row (2007) - Film Review. N.p., n.d. Web. 20 Mar. 2013.</a> 
+      
+      <br>> <a href="http://skidrow.org/newsletters/SRHT_Winter12-13_Newsltr.pdf" target="_blank">
+      Skid Row Housing Trust. Skid Row Housing TRUST. Los Angeles: Skid Row Housing Trust, 2012. Skid Row Housing Trust Quarterly Newsletter. The Trust News. Web. 1 June 2013.</a>
+      
+      <br>> <a href="http://movies.tvguide.com/skid-row/review/290086" target="_blank">
+      "Skid Row." TV Guide. N.p., n.d. Web. 30 Mar. 2013.</a>
+      
+      <br>> <a href="http://blogs.sohh.com/official/2007/08/pras_from_the_fugees_hits_skid.html" target="_blank">
+      SOHH Official." Pras from The Fugees Hits "Skid Row". N.p., n.d. Web. 21 Mar. 2013.</a>
+      
+      <br>> <a href="http://blogdowntown.com/2008/04/3268-skid-row-documentary-a-must-see-for-downtown" target="_blank">
+      "Stay Connected." 'Skid Row' Documentary a Must See for Downtown Residents. N.p., n.d. Web. 12 Mar. 2013.</a>
+      </p>]
   end
 
   def about
@@ -125,6 +154,14 @@ class SkidRowController < ApplicationController
       <br><br></p><br><center><iframe width="640" height="360" src="http://www.youtube.com/embed/ZvG_UlvqggA?feature=player_embedded" frameborder="0" allowfullscreen></iframe></center>
       <br><p>Watch the trailer above for a new documentary depicting the various types of people and why they call Skid Row
       "home."" <br>For more information on the documentary, visit <a href="http://www.campuscircle.com/review.cfm?r=16696" target="_blank"><u>this review</u></a> for an in-depth look.</p>]
+      
+      @history_sources = %Q[<p>
+        <a href="http://skidrow.org/wwa_on2.php" target="_blank">
+        Skid Row Housing Trust - Homes. Support. Success." Skid Row Housing Trust - Homes. Support. Success. N.p., n.d. Web. 1 Apr. 2013.</a>
+        <br>
+        <a href="http://www.skidrowjournal.org/history-of-skid-row.htmls" target-"_blank">
+        Spivack, Donald. "History of Skid Row -  Skid Row Journal."  Skid Row Journal. Community Redevelopment Agency (CRA), 15 Sept. 1998. Web. 30 March. 2013.</a>
+      </p>]
   end
 
   def relevance
@@ -172,19 +209,24 @@ class SkidRowController < ApplicationController
     target="_blank"><u>this link here</u>.</a></p>]
 
     @relevance_sources = %Q[<p class="text-info">
-    > Fox, Jeremy C. "Red Flag Raised over Homeless Numbers Are Up, and Cuts Looming."
-    BostonGlobe.com. Boston Globe, 05 Mar. 2013. Web. 02 Apr. 2013.
+    > <a href="http://bostonglobe.newspaperdirect.com/epaper/viewer.aspx" target="_blank">
+    Fox, Jeremy C. "Red Flag Raised over Homeless Numbers Are Up, and Cuts Looming."
+    BostonGlobe.com. Boston Globe, 05 Mar. 2013. Web. 02 Apr. 2013.</a>
     <br>
-    > Lowrey, Annie. "Homeless Rates Held Level Amid Recession, Study Says, but Big Gains Are
-    Elusive." The New York Times. The New York Times, 10 Dec. 2012. Web. 02 Apr.
-    2013.
+    > <a href="http://www.nytimes.com/2012/12/10/us/homeless-rates-steady-despite-recession-hud-says.html?_r=0" target="_blank">
+    Lowrey, Annie. "Homeless Rates Held Level Amid Recession, Study Says, but Big Gains Are
+    Elusive." The New York Times. The New York Times, 10 Dec. 2012. Web. 02 Apr. 2013.</a>
     <br>
-    > "Snapshot of Homelessness." National Alliance to End Homelessness:. N.p., n.d. Web. 02 Apr.
-    2013.
+    > <a href="http://www.endhomelessness.org/pages/snapshot_of_homelessness" target="_blank">
+    "Snapshot of Homelessness." National Alliance to End Homelessness:. N.p., n.d. Web. 02 Apr.
+    2013.</a>
     <br>
-    > "United States Interagency Council on Homelessness." Fact Sheets. N.p., n.d. Web. 02 Apr.
-    2013.
+    > <a href="http://www.usich.gov/" target="_blank">
+    "United States Interagency Council on Homelessness." Fact Sheets. N.p., n.d. Web. 02 Apr.
+    2013.</a>
     <br>
-    > "Working to End Homelessness in Austin." Advocate. N.p., n.d. Web. 02 Apr. 2013.</p>]
+    > <a href="http://www.austinecho.org/" target="_blank">
+    "Working to End Homelessness in Austin." Advocate. N.p., n.d. Web. 02 Apr. 2013.</a>
+    </p>]
   end
 end
