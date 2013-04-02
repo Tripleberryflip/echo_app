@@ -13,7 +13,7 @@ EchoApp::Application.routes.draw do
   post 'echo/echo'
   get 'echo/echo'
 
-  root to: 'skid_row#about'
+  root to: 'skid_row#documentary'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
